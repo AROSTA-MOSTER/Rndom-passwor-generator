@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; 
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-2px); 
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #343a40;
+}
+
+.input-group,
+.output-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #495057;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+.checkbox-group {
+    margin: 10px 0;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #495057;
+    cursor: pointer;
+}
+
+.checkbox-group input {
+    margin-right: 8px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #011310;
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    input[type="number"],
+    input[type="text"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-height: 600px) {
+    body {
+        padding: 5px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    input[type="number"],
+    input[type="text"],
+    button {
+        font-size: 14px;
+    }
+}
