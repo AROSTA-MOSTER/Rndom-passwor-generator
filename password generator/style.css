@@ -1,0 +1,170 @@
+/* UI and UX Improvements */
+
+body {
+    font-family: 'Merriweather', serif; /* Serif font for body */
+    font-size: 18px; /* Base font size */
+    line-height: 1.5; /* Adjust line height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: linear-gradient(-135deg, #007bff, #00bcd4, #03a9f4); /* Gradient background */
+    background-size: 400% 400%; /* Background size */
+    animation: animate 10s ease-in-out infinite; /* Animation */
+}
+
+@keyframes animate {
+    0% {
+        background-position: -250% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.container {
+    background-color: #e8e8e8; /* White background for container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    width: 90%; /* Width of the container */
+    max-width: 400px; /* Maximum width */
+    margin: 50px auto; /* Center horizontally */
+    padding: 20px; /* Padding inside container */
+    transition: transform 0.3s ease; /* Transition effect on hover */
+}
+
+.container.dark {
+    background-color: #333; /* Dark background for container */
+    border-color: #333; /* Border color */
+}
+
+.container.light {
+    background-color: #737070; /* Light background for container */
+    border-color: #ccc; /* Border color */
+}
+
+h1 {
+    font-size: 36px; /* Larger font size for header */
+    font-weight: bold; /* Bold font weight */
+    line-height: 1.1; /* Adjust line height */
+    color: #333; /* Dark text color */
+    margin-bottom: 15px; /* Space below header */
+    text-align: center; /* Center align text */
+}
+
+h2 {
+    font-size: 22px; /* Medium font size for subheader */
+    font-weight: 600; /* 600 font weight */
+    line-height: 1.2; /* Adjust line height */
+    color: #555; /* Medium gray text color */
+    margin-bottom: 10px; /* Space below subheader */
+    text-align: center; /* Center align text */;
+}
+
+.input-group,
+.output-group {
+    margin-bottom: 25px; /* Space below input and output groups */
+}
+
+.label {
+    display: block; /* Display block */
+    margin-bottom: 5px; /* Space below label */
+    font-size: 16px; /* Font size */
+    color: #555; /* Medium text color */
+}
+
+.input {
+    width: 100%; /* Full width input */
+    padding: 12px; /* Padding inside input */
+    margin-bottom: 15px; /* Space below input */
+    border: 1px solid #ccc; /* Border width and color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s ease; /* Transition effect for focus */
+}
+
+.checkbox-group {
+    margin-top: 10px; /* Space above checkbox group */
+}
+
+.checkbox-group label {
+    display: flex; /* Flex display for alignment */
+    align-items: center; /* Center align items */
+    font-size: 14px; /* Font size */
+    color: #555; /* Medium text color */
+    cursor: pointer; /* Pointer cursor on hover */;
+}
+
+.checkbox-group input {
+    margin-right: 8px; /* Space between checkbox and label */
+}
+
+.button {
+    background-color: #007bff; /* Blue background color */
+    color: #484343; /* White text color */
+    padding: 12px; /* Padding inside buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    transition: background-color 0.3s ease; /* Transition effect on hover */
+}
+
+.button:hover {
+    background-color: #718f93; /* Darker blue on hover */
+}
+
+.button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 2px #007bff; /* Focus effect */
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%; /* Full width */
+        padding: 10px; /* Adjust padding */
+    }
+    
+    h1 {
+        font-size: 24px; /* Adjust font size */
+        margin-bottom: 5px; /* Adjust space */
+    }
+    
+    h2 {
+        font-size: 18px; /* Adjust font size */
+        margin-bottom: 5px; /* Adjust space */
+    }
+    
+    .input {
+        padding: 10px; /* Adjust padding */
+        margin-bottom: 10px; /* Adjust space */
+    }
+    
+    .checkbox-group label {
+        font-size: 12px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 5px; /* Adjust padding */
+    }
+    
+    h1 {
+        font-size: 20px; /* Adjust font size */
+        margin-bottom: 3px; /* Adjust space */
+    }
+    
+    h2 {
+        font-size: 16px; /* Adjust font size */
+        margin-bottom: 3px; /* Adjust space */
+    }
+    
+    .input {
+        padding: 8px; /* Adjust padding */
+        margin-bottom: 8px; /* Adjust space */
+    }
+    
+    .checkbox-group label {
+        font-size: 10px; /* Adjust font size */
+    }
+}
